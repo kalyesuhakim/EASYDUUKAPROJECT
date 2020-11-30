@@ -1,0 +1,51 @@
+query getItemsByCategory($category_slug: String! $limit: Int! $cursorValue: String! $cursorProperty: String! $sort: String!){
+  getItemsByCategory(
+    category_slug: $category_slug
+    limit: $limit
+    cursorValue: $cursorValue
+    cursorProperty: $cursorProperty
+    cursorSort: $sort
+  ) {
+    ... on ItemsPayload {
+      success
+      items {
+        id
+        name
+        image
+        images
+        description
+        price
+        merchant {
+          name
+        }
+        location
+        slug
+        category {
+          id
+          name
+          slug
+        }
+        features {
+          name
+          description
+        }
+        related {
+          id
+          name
+          image
+          location
+        }
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+
+    ... on ErrorResponse {
+      success
+      message
+      error_code
+    }
+  }
+}

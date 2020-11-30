@@ -1,0 +1,50 @@
+/* The emerging W3C standard
+   that is currently Firefox-only */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $scroll-thumb-color $primaryMain;
+}
+
+
+/* Works on Chrome/Edge/Safari */
+
+// *::-webkit-scrollbar {
+//     width: 12px;
+// }
+// *::-webkit-scrollbar-track {
+//     background: orange;
+// }
+// *::-webkit-scrollbar-thumb {
+//     background-color: blue;
+//     border-radius: 20px;
+//     border: 3px solid orange;
+// }
+
+/* Let's get this party started */
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+*::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+}
+
+
+/* Handle */
+
+*::-webkit-scrollbar-thumb {
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+    background: $scroll-thumb-color; // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+*::-webkit-scrollbar-thumb:window-inactive {
+    background: $scroll-thumb-color;
+}

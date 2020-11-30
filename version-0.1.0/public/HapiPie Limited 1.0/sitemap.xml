@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap scheme="2.1">
+  <title>HapiPie Limited</title>
+  <version>1.0</version>
+  <link>https://www.hapipie.com</link>
+  <pubDate>Thu, 03 Sep 2020 12:12:04 -0400</pubDate>
+  <settings>
+    <language>en_US</language>
+    <title>HapiPie Limited</title>
+    <tagline>HapiPie </tagline>
+    <url>https://www.hapipie.com/</url>
+  </settings>
+  <section id="svgmainsection">
+    <options>
+      <template>horizontal</template>
+      <color_scheme>default</color_scheme>
+      <design>flat</design>
+      <id>svgmainsection</id>
+    </options>
+    <cells>
+      <cell id="svgxxa5qj578ujyq5q2">
+        <archetype>_fragment</archetype>
+        <level>home</level>
+        <order>1000</order>
+        <text>HapiPie</text>
+        <contents lang="en_US">
+          <meta_description>We are an all in one affordable and efficient digital solution for media, digital marketing, and Information technology services for businesses to operate in this post-COVID-19 digital era."</meta_description>
+          <page_title>Hapipie Limited</page_title>
+          <meta_title>HapiPie</meta_title>
+          <meta_focus_keyword>Hapipie, Hapipie Limited, Tech, Media, Marketing, Digital Marketing, Server Management, Software development, Mobile Application develpment, Domain Registration</meta_focus_keyword>
+        </contents>
+      </cell>
+      <cell id="svgyabh5ypisejvahk8">
+        <urls>
+          <url label="About Hapipie Limited" type="external">https://www.hapipie.com/about</url>
+        </urls>
+        <archetype>_consumption</archetype>
+        <level>1</level>
+        <order>1000</order>
+        <text>About</text>
+        <contents lang="en_US">
+          <meta_description>Hapipie limited is a fully licensed company with a team of highly qualified, skilled, and determined professionals, to offer professional tech, media, and marketing among others customized to grow your business, both in visibility and revenue to meet the ever-changing needs of different businesses in their competitive environment.</meta_description>
+          <status>complete</status>
+          <meta_title>About | Hapipie Limited</meta_title>
+          <meta_focus_keyword>Marketing, Media, Hapipie Limited Digital Marketing</meta_focus_keyword>
+          <url_slug>about</url_slug>
+          <page_title>About | HapiPie</page_title>
+        </contents>
+      </cell>
+      <cell id="svgfqxurolivht3z1tz">
+        <archetype>_listing</archetype>
+        <level>1</level>
+        <order>2000</order>
+        <text>Services</text>
+      </cell>
+      <cell id="svgmz5df0gfz6s20dsy">
+        <archetype>_listing</archetype>
+        <level>1</level>
+        <order>3000</order>
+        <text>Pricing</text>
+        <contents lang="en_US">
+          <meta_description>We provide cheap affordable and efficient services that allow our customers to operate effectively online and increase their revenue streams through expanding their outreach to a much wider digital audience,</meta_description>
+          <page_title>Pricing</page_title>
+          <meta_title>Pricing | Hapipie</meta_title>
+        </contents>
+      </cell>
+      <cell id="svgy5krc7vham8dzobp">
+        <urls>
+          <url label="Get Quote For Hapipie Services" type="external">https://forms.gle/gkjrNuZxgYJkAioP8</url>
+        </urls>
+        <archetype>_external</archetype>
+        <level>1</level>
+        <order>4000</order>
+        <text>Get Quote</text>
+      </cell>
+      <cell id="svgv8hyzh4wo2700ffd">
+        <urls>
+          <url type="internal">svgv8hyzh4wo2700ffd</url>
+        </urls>
+        <archetype>_consumption</archetype>
+        <level>2</level>
+        <order>1000</order>
+        <parent>svgfqxurolivht3z1tz</parent>
+        <text>Tech Services</text>
+        <contents lang="en_US">
+          <url_slug>services/tech</url_slug>
+          <meta_title>Tech Services | Hapipie Limited</meta_title>
+        </contents>
+      </cell>
+      <cell id="svgvanniub1abm40gcn">
+        <urls>
+          <url type="internal">svgvanniub1abm40gcn</url>
+        </urls>
+        <archetype>_consumption</archetype>
+        <text>Digital Marketing Services</text>
+        <level>2</level>
+        <order>3000</order>
+        <parent>svgfqxurolivht3z1tz</parent>
+        <contents lang="en_US">
+          <url_slug>services/marketing</url_slug>
+          <meta_description>We provide services that allow our customers to operate effectively online and increase their revenue streams through expanding their outreach to a much wider digital audience,</meta_description>
+          <meta_title>Digital Marketing Services | Hapipie Limited</meta_title>
+        </contents>
+      </cell>
+    </cells>
+  </section>
+</sitemap>

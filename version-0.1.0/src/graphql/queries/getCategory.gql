@@ -1,0 +1,18 @@
+query {
+  getCategory(id: 1) {
+    ... on CategoryPayload {
+      success
+      category {
+        id
+        name
+        slug
+      }
+    }
+
+    ... on ErrorResponse {
+      success
+      message
+      error_code
+    }
+  }
+}

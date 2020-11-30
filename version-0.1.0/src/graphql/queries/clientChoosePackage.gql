@@ -1,0 +1,3 @@
+mutation ClientChoosePackage($package: KnownSubscriptionPackage, $service: ServiceList){
+    clientChoosePackage(package: $package service: $service) 
+}

@@ -1,0 +1,6 @@
+query clients($fetchAll: Boolean!){
+    clients(fetchAll: $fetchAll){
+        email
+        name
+    }
+}

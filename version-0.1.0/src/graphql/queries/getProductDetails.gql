@@ -1,0 +1,42 @@
+query getItem($id: Int!){
+      getItem(id: $id) {
+    ... on ItemPayload {
+      success
+      item {
+        id
+        name
+        image
+        images
+        description
+        price
+        merchant {
+          name
+        }
+        location
+        slug
+        category {
+          id
+          name
+          slug
+        }
+        features {
+          name
+          description
+        }
+        related {
+          id
+          name
+          image
+          location
+        }
+      }
+    }
+
+    ... on ErrorResponse {
+      success
+      message
+      error_code
+    }
+  }
+}
+

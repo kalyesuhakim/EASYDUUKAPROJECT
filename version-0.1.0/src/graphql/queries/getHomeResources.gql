@@ -1,0 +1,82 @@
+query {
+  Home {
+    ... on HomeResource {
+      success
+      Categories {
+        id
+        name
+        slug
+      }
+      Items {
+        id
+        name
+        price
+        image
+      }
+      RealEstates {
+        id
+        name
+        image
+        description
+        price
+        location
+      }
+    }
+
+    ... on ErrorResponse {
+      success
+      message
+      error_code
+    }
+  }
+
+  getItemsByCategory(
+    category_slug: "real-estate"
+    limit: 8
+    cursorValue: "2500"
+    cursorProperty: "price"
+    cursorSort: "asc"
+  ) {
+    ... on ItemsPayload {
+      success
+      items {
+        id
+        name
+        image
+        images
+        description
+        price
+        merchant {
+          name
+        }
+        location
+        slug
+        category {
+          id
+          name
+          slug
+        }
+        features {
+          name
+          description
+        }
+        related {
+          id
+          name
+          image
+          location
+        }
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+
+    ... on ErrorResponse {
+      success
+      message
+      error_code
+    }
+  }
+}

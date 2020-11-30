@@ -1,0 +1,186 @@
+@import './color.scss';
+$primaryMain: #eeeeee;
+$primaryLight: #ffffff;
+$primaryDark: #bcbcbc;
+$primaryText: #000000;
+//secondary Colors;
+$secondaryMain: #ff8c00;
+$secondaryLight: #ffbd45;
+$secondaryDark: #c55d00;
+$secondaryText: #000000;
+@import './material-ui-resets.scss';
+.sec-app-bar,
+.sec-app-toolbar {
+    align-items: flex-end!important;
+    padding-bottom: 0px!important;
+    .MuiButtonBase-root {
+        padding-bottom: 10px;
+    }
+}
+
+.appbar-active-link-lg {
+    border-bottom: solid $secondaryMain 2px!important;
+    color: $secondaryMain!important;
+}
+
+.main-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    // min-height: 1000px;
+    // margin-top: 60px;
+}
+
+.bottom-navbar {
+    .Mui-selected {
+        color: $secondaryMain!important;
+        .MuiSvgIcon-root {
+            // color: $secondaryMain!important
+        }
+    }
+}
+
+.active-bn-links {
+    // background-color: ;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    .arrow {
+        position: absolute;
+        top: 38%;
+    }
+    .arrow-left {
+        left: 0px;
+    }
+    .arrow-right {
+        right: 0px;
+    }
+    .active-slide {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .dot {
+            border: solid 2px #fff;
+            background: transparent;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            border-radius: 100%;
+        }
+        .active {
+            background: $secondaryMain;
+        }
+    }
+}
+
+$darkGrad: rgba(0, 0, 0, 0);
+$lightGrad: rgba(0, 0, 0, 0.9);
+$gradPerc: 0%;
+.slide-inner-wrapper {
+    // background: $darkGrad;
+    // /* Old Browsers */
+    // background: -moz-linear-gradient(top, $darkGrad$gradPerc, $lightGrad 100%);
+    // /* FF3.6+ */
+    // background: -webkit-gradient(left top, left bottom, color-stop(0%, $darkGrad), color-stop(100%, $lightGrad));
+    // /* Chrome, Safari4+ */
+    // background: -webkit-linear-gradient(top, $darkGrad$gradPerc, $lightGrad 100%);
+    // /* Chrome10+,Safari5.1+ */
+    // background: -o-linear-gradient(top, $darkGrad$gradPerc, $lightGrad 100%);
+    // /* Opera 11.10+ */
+    // background: -ms-linear-gradient(top, $darkGrad$gradPerc, $lightGrad 100%);
+    // /* IE 10+ */
+    // background: linear-gradient(to bottom, $darkGrad$gradPerc, $lightGrad 100%);
+    /* W3C */
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+}
+
+#changed-id_ifr {
+    img {
+        width: 100%!important;
+        height: auto;
+    }
+}
+
+.np-0 {
+    * {
+        padding: 0px!important;
+    }
+}
+
+.small-font {
+    font-size: 14px!important;
+    * {
+        font-size: 14px!important;
+    }
+}
+
+.line-through {
+    text-decoration: line-through!important;
+    * {
+        text-decoration: line-through!important;
+    }
+}
+
+.strong {
+    font-weight: 400;
+}
+
+.editor-input:focus {
+    outline: none;
+    border: none;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.blog-nav-link {
+    color: #000000!important
+}
+
+.h-100 {
+    min-height: 100%!important;
+}
+
+.bottom-links-a-c,
+.bottom-links-a-c:link,
+a.bottom-links-a-c,
+.MuiBottomNavigationAction-root.bottom-links-a-c {
+    color: #ff8c00 !important;
+    * {
+        color: #ff8c00 !important;
+    }
+    span: {
+        color: #ff8c00 !important;
+    }
+}
+
+@import './post-view.scss';
+@import './research.scss';
+.bottom-links-a-c {
+    color: #ff8c00 !important;
+    .MuiBadge-badge {
+        color: #fff!important;
+    }
+}
+
+@import '_scrollbar';
+@import './table';
+.s {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.w-50 {
+    width: 50%!important;
+}
+
+@import "_buttons"

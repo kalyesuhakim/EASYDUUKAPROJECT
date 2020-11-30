@@ -1,0 +1,14 @@
+mutation signup($user: signupInput!) {
+  signUp(input: $user) {
+    ... on CustomerSignUpSuccess {
+      success
+      message
+    }
+
+    ... on ErrorResponse {
+      success
+      message
+      error_code
+    }
+  }
+}

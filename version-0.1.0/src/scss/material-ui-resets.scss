@@ -1,0 +1,86 @@
+// .MuiOutlinedInput-root,
+.MuiButton-root {
+  border-radius: 0px !important;
+  text-transform: initial !important;
+}
+
+.MuiDrawer-paperAnchorDockedLeft {
+  border: none !important;
+}
+
+.dashboard-icon-color {
+  color: $secondaryDark !important;
+  * {
+    color: $secondaryDark;
+  }
+}
+
+.active-app-drawer-link {
+  background-color: rgba(
+    $secondaryLight,
+    0.2
+  ) !important; // background: red!important;
+}
+
+.flat-button {
+  border-radius: none !important;
+}
+
+.app-bar {
+  .MuiBadge-badge,
+  .MuiBadge-badge * {
+    background-color: $coloredOrange !important;
+    color: $secondaryLight !important;
+  }
+}
+
+/* slightly transparent fallback */
+
+.MuiBackdrop-root {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* if backdrop support: very transparent and blurred */
+
+@supports (
+  (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))
+) {
+  // .backdrop-blur {
+  //     background-color: rgba(255, 255, 255, .5);
+  //     -webkit-backdrop-filter: blur(2em);
+  //     backdrop-filter: blur(2em);
+  // }
+  .MuiBackdrop-root {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-backdrop-filter: blur(7px) !important;
+    backdrop-filter: blur(7px) !important;
+    // backdrop-filter: blur(1);
+    opacity: 0;
+    position: relative;
+    // background: hsla(0, 0%, 100%, .3)!important;
+  }
+}
+
+.MuiBackdrop-root::backdrop {
+  filter: blur(20px) !important;
+}
+
+.MuiBackdrop-root::before {
+  content: "";
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(20px) !important;
+  z-index: 1;
+}
+
+.MuiDialog-paperFullScreen {
+  background: transparent !important;
+}
+
+.round-btn {
+  border-radius: "20px";
+}

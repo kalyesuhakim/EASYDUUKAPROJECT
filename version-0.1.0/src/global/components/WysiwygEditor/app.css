@@ -1,0 +1,31 @@
+.my-little-app {
+    width: 500px;
+    margin: 50px;
+}
+
+.draft-editor-wrapper {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.container-root {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.my-custom-block {
+    background-color: cadetblue;
+    margin: 15px 0;
+    font-size: 16px;
+    position: relative;
+}
+
+.editable-area {
+    background-color: lightblue;
+    height: 50px;
+}
+
+.w-100{
+    width: 100%
+}

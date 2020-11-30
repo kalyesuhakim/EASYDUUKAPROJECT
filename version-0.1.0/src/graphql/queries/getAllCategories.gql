@@ -1,0 +1,12 @@
+query {
+  getAllCategories {
+    ... on CategoriesPayload {
+      success
+      categories {
+        id
+        name
+        slug
+      }
+    }
+  }
+}

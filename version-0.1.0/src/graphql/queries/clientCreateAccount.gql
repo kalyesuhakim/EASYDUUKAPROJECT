@@ -1,0 +1,3 @@
+mutation ClientCreateAccount($name: String! $email: String! $phoneNumber: String! $password: String) {
+    clientCreateAccount(name: $name, email: $email, phoneNumber: $phoneNumber, password: $password)
+}

@@ -1,0 +1,3 @@
+mutation ClientAddProfile($businessProfile: BusinessProfile, $personalProfile: PersonalProfile){
+    ClientAddProfile(businessProfile: $businessProfile, personalProfile: $personalProfile)
+}

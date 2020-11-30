@@ -1,0 +1,40 @@
+@import './color.scss';
+
+/*
+*  material-ui resets
+*/
+
+@import './material-ui-resets.scss';
+.editor-warper {
+    height: 400px;
+    h1 {
+        color: red!important;
+    }
+}
+
+.h-100 {
+    height: '100%',
+}
+
+.app-theme-wrapper {
+    background-color: $secondaryMain;
+    min-height: 100vh;
+}
+
+.active-secondary-tab {
+    color: $coloredOrange!important;
+    border-bottom: solid 2px $coloredOrange!important;
+}
+
+@import '_scrollbar';
+@import '_table';
+.pdf-main {
+    display: none;
+    * {
+        background: transparent!important
+    }
+    html: {
+        opacity: 0.1!important;
+    }
+}
+

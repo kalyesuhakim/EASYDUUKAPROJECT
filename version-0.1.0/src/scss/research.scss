@@ -1,0 +1,36 @@
+$lightGrad: rgb(230, 224, 224);
+$darkGrad: rgb(255, 255, 255, 0.5);
+.research-post-grad {
+    background: #Ffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, $darkGrad, $lightGrad);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $darkGrad, $lightGrad);
+}
+
+.research-posts-nav-link {
+    transition: 0.3s ease;
+    text-decoration: none!important;
+}
+
+.research-posts-nav-link:hover {
+    transition: 0.3s ease;
+    * {
+        opacity: 0.8!important
+    }
+}
+
+.research-posts-nav-link:visited {
+    // color: $secondaryMain
+}
+
+.research-post-body {
+    *img {
+        width: 100%;
+        height: auto;
+    }
+    overflow-x: auto;
+    * {
+        position: relative;
+    }
+}
